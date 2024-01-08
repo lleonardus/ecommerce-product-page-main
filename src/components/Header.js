@@ -5,7 +5,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between">
+    <header className="flex justify-between md:border-b md:border-b-blue-700/40 md:pb-10">
       <div className="grid max-w-16 grid-cols-2 items-end md:flex md:max-w-none md:gap-12">
         <button
           onClick={() => setIsMenuOpen((isOpen) => !isOpen)}

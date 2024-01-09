@@ -6,7 +6,7 @@ export function Header() {
 
   return (
     <header className="flex justify-between md:border-b md:border-b-blue-700/40 md:pb-10">
-      <div className="grid max-w-16 grid-cols-2 items-end md:flex md:max-w-none md:gap-12">
+      <div className="grid max-w-16 grid-cols-2 items-center md:flex md:max-w-none md:gap-12">
         <button
           onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
           className={`z-[99999] aspect-square w-4 bg-no-repeat md:hidden ${
@@ -20,7 +20,7 @@ export function Header() {
         </div>
         <NavList isMenuOpen={isMenuOpen} />
       </div>
-      <div className="flex items-end gap-5">
+      <div className="flex items-center gap-5">
         <div className="w-8 text-blue-800 hover:cursor-pointer hover:text-blue-900">
           <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -30,7 +30,7 @@ export function Header() {
             />
           </svg>
         </div>
-        <div className="w-7 rounded-full border-[2px] border-solid border-white hover:cursor-pointer hover:border-orange-200">
+        <div className="w-7 rounded-full border-[2px] border-solid border-white hover:cursor-pointer hover:border-orange-200 md:w-11">
           <img src="./images/image-avatar.png" alt="avatar" />
         </div>
       </div>

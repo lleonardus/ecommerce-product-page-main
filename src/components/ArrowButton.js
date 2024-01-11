@@ -1,6 +1,7 @@
-export function ArrowButton({ position }) {
+export function ArrowButton({ position, handleClick }) {
   return (
     <button
+      onClick={handleClick}
       className={`absolute top-[50%] grid aspect-square w-10 translate-y-[-50%] place-items-center rounded-full bg-white text-blue-900 hover:text-orange-200 ${
         position === "right" ? "right-3" : "left-3 rotate-180"
       }

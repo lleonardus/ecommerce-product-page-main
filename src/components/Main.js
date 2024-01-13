@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { Gallery } from "./Gallery";
 
-//TODO ajeitar layout no md:
-
 export function Main() {
   const [numberOfSneakers, setNumberOfSneakers] = useState(0);
 
   return (
-    <main className="md:mt-20 md:grid md:grid-cols-2 md:gap-5">
+    <main className="md:mt-20 md:grid md:grid-cols-2 md:gap-5 xl:px-10">
       <Gallery />
-      <div className="px-5 pt-5">
+      <div className="px-5 pt-5  md:max-w-[55ch] lg:pt-16">
         <div className="flex flex-col gap-2">
           <h2 className="text-sm font-bold tracking-widest text-orange-200">
             SNEAKER COMPANY
@@ -18,12 +16,12 @@ export function Main() {
             Fall Limited Edition Sneakers
           </h1>
         </div>
-        <p className="py-5 text-blue-800">
+        <p className="py-5 text-blue-800 md:pb-7 md:pt-10">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they'll withstand everything
           the weather can offer.
         </p>
-        <div className="flex flex-row items-center justify-between gap-5 pb-5 md:flex-col md:items-start md:gap-2">
+        <div className="flex flex-row items-center justify-between gap-5 pb-8 md:flex-col md:items-start md:gap-2">
           <div className="flex flex-row items-center gap-3">
             <p className="text-3xl font-bold text-blue-900">$125.00</p>
             <p className="rounded-md bg-orange-100 px-2 font-bold text-orange-200">

@@ -17,7 +17,7 @@ export function Gallery() {
   }
 
   return (
-    <div>
+    <div className="md:max-w-[33rem]">
       <div className="relative">
         <div className="md:hidden">
           <ArrowButton position="left" handleClick={handleClickLeft} />

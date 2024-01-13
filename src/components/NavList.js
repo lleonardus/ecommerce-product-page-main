@@ -3,7 +3,7 @@ import { NavItem } from "./NavItem";
 export function NavList({ isMenuOpen }) {
   return (
     <nav
-      className={`absolute inset-0 z-[1000] bg-black/75  md:static md:block ${
+      className={`fixed inset-0 z-[1000] bg-black/75  md:static md:block ${
         isMenuOpen ? "" : "hidden"
       }`}
     >

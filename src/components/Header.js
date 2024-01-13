@@ -11,7 +11,7 @@ export function Header() {
           onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
           className={`z-[99999] aspect-square w-4 bg-no-repeat md:hidden ${
             isMenuOpen
-              ? "bg-[url(../public/images/icon-close.svg)]"
+              ? "fixed bg-[url(../public/images/icon-close.svg)]"
               : "bg-[url(../public/images/icon-menu.svg)]"
           }`}
         ></button>

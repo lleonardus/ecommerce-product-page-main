@@ -17,7 +17,9 @@ export function Header({ numberOfSneakers, setNumberOfSneakers }) {
           }`}
         ></button>
         <div className="w-36">
-          <img src="./images/logo.svg" alt="logo" />
+          <a href="/">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
         </div>
         <NavList isMenuOpen={isMenuOpen} />
       </div>

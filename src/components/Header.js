@@ -23,7 +23,7 @@ export function Header({ numberOfSneakers, setNumberOfSneakers }) {
         </div>
         <NavList isMenuOpen={isMenuOpen} />
       </div>
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-2 md:gap-5">
         <Cart
           numberOfSneakers={numberOfSneakers}
           setNumberOfSneakers={setNumberOfSneakers}

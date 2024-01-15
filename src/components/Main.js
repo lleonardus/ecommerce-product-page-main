@@ -52,7 +52,7 @@ export function Main({ numberOfSneakers, setNumberOfSneakers }) {
             </div>
           </button>
           <button
-            className="flex w-full justify-center gap-4 rounded-xl bg-orange-200 py-4 font-bold text-white hover:bg-orange-200/70"
+            className="flex w-full justify-center gap-4 rounded-xl bg-orange-200 py-4 font-bold text-white shadow-xl shadow-orange-200/40 hover:bg-orange-200/70"
             onClick={handleAddItem}
           >
             <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">

@@ -3,7 +3,7 @@ export function NavItem({ children, link = "#" }) {
     <li>
       <a
         href={link}
-        className="relative font-extrabold text-blue-900 md:font-normal md:text-blue-800 md:after:absolute md:after:left-0 md:after:top-[68px] md:after:w-full md:hover:text-blue-900 md:hover:after:h-1 md:hover:after:bg-orange-200 "
+        className="relative font-extrabold text-blue-900 md:font-normal md:text-blue-800 md:transition-colors md:after:absolute md:after:left-[50%] md:after:top-[68px] md:after:w-0 md:after:translate-x-[-50%] md:after:transition-[width] md:hover:text-blue-900 md:hover:after:h-1 md:hover:after:w-full md:hover:after:bg-orange-200"
       >
         {children}
       </a>

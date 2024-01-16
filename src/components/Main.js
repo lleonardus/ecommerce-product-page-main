@@ -35,7 +35,7 @@ export function Main({ numberOfSneakers, setNumberOfSneakers }) {
           </div>
           <p className="font-bold text-blue-700 line-through">$250.00</p>
         </div>
-        <div className="flex flex-col gap-4 pb-10 md:flex-row">
+        <div className="flex flex-col gap-4 pb-24 md:flex-row">
           <button className="flex w-full cursor-default items-center justify-between gap-4 rounded-xl bg-blue-100 px-5 py-4 font-bold text-blue-900 md:w-[50%]">
             <div
               className="cursor-pointer hover:opacity-70"

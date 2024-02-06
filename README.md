@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 👨‍💻‍ Sobre o projeto
+Esse projeto foi inspirado em um <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6" target="_blank">desafio</a> do site
+<a href="https://www.frontendmentor.io/" target="_blank">frontend mentor</a> que simula um E-commerce para sneakers. 
+Fiz esse desafio com o intuito de praticar fundamentos de React  juntamente com o Tailwind.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🧰 Ferramentas Utilizadas
 
-## Available Scripts
+- <a href="https://react.dev/" target="_blank">React</a>
+- <a href="https://create-react-app.dev/" target="_blank">Create React App</a>
+- <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>
+- <a href="https://prettier.io/" target="_blank">Prettier</a>
+- <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">NPM</a>
+- <a href="https://www.docker.com/" target="_blank">Docker</a>
 
-In the project directory, you can run:
+## 💿 Como rodar na sua máquina
 
-### `npm start`
+### Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Git**;
+- **Docker + Docker-Compose (caso queira utilizar Docker)**;
+- **Node + NPM (caso queira instalar as dependências na sua máquina)**;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```shell
+# Clone o repositório na sua máquina
+$ git clone https://github.com/lleonardus/ecommerce-product-page-main
 
-### `npm test`
+# Abra a pasta do projeto
+$ cd ecommerce-product-page-main
+```
+Agora é só escolher sua forma favorita de rodar o projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+    <summary><b>🐳 Utilizando Docker</b></summary>
 
-### `npm run build`
+```shell
+# Inicie o projeto usando docker
+$ docker-compose up -d
+```
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+    <summary><b>📦 Utilizando Node</b></summary>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+# Instale as dependências
+$ npm i
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Inicie o projeto
+$ npm start 
+```
+</details>
 
-### `npm run eject`
+Após esse processo, o App vai estar rodando em **http://localhost:3000**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📸 Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 💻 Desktop
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Padrão
+![desktop image](./screenshots/desktop.png)
+#### Carrinho aberto e com items
+![desktop image](./screenshots/desktop_cart-open.png)
+#### Lightbox Gallery
+![desktop image](./screenshots/desktop_lightbox-gallery.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📱 Mobile
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Padrão
+![mobile image](./screenshots/mobile.png)
+#### Carrinho aberto e vazio
+![mobile image](./screenshots/mobile_cart-open.png)
+#### Menu aberto
+![mobile image](./screenshots/mobile_menu-open.png)

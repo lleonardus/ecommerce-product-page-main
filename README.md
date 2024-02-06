@@ -3,6 +3,8 @@ Esse projeto foi inspirado em um <a href="https://www.frontendmentor.io/challeng
 <a href="https://www.frontendmentor.io/" target="_blank">frontend mentor</a> que simula um E-commerce para sneakers. 
 Fiz esse desafio com o intuito de praticar fundamentos de React  juntamente com o Tailwind.
 
+Deploy na Vercel: https://ecommerce-product-page-main-xi-rosy.vercel.app/
+
 ### 🧰 Ferramentas Utilizadas
 
 - <a href="https://react.dev/" target="_blank">React</a>

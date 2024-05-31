@@ -16,6 +16,10 @@ export default {
         900: "hsl(220, 13%, 13%)",
       },
     },
+    fontWeight: {
+      normal: 400,
+      bold: 700,
+    },
     extend: {},
   },
   plugins: [],

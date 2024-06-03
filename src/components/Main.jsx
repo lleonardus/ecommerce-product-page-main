@@ -19,6 +19,10 @@ function Main() {
     setIndex((index) => (index < MAX_INDEX ? index + 1 : MIN_INDEX));
   }
 
+  function handleIndex(index) {
+    setIndex(index);
+  }
+
   return (
     <main className="z-1 relative lg:flex lg:gap-24 lg:pt-24">
       <section>
@@ -34,10 +38,15 @@ function Main() {
           </div>
           <div className="hidden lg:block">
             <ThumbnailList>
-              <Thumbnail index={1} className={"w-28"} />
-              <Thumbnail index={2} className={"w-28"} />
-              <Thumbnail index={3} className={"w-28"} />
-              <Thumbnail index={4} className={"w-28"} />
+              {Array.from({ length: MAX_INDEX }, (_, i) => (
+                <Thumbnail
+                  key={i}
+                  index={i + 1}
+                  selectedId={index}
+                  onClick={handleIndex}
+                  className={"w-24"}
+                />
+              ))}
             </ThumbnailList>
           </div>
         </div>

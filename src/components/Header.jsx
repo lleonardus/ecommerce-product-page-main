@@ -8,7 +8,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between gap-6 p-6 md:border-b md:border-b-blue-700/40 md:px-0 md:py-10">
+    <header className="relative z-[1000] flex items-center justify-between gap-6 p-6 md:border-b md:border-b-blue-700/40 md:py-10 lg:px-0">
       <div className="flex items-center gap-6">
         <button
           onClick={() => setIsOpen((isOpen) => !isOpen)}

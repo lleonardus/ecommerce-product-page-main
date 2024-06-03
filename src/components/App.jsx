@@ -1,10 +1,12 @@
 import Header from "./Header";
+import Main from "./Main";
 
 function App() {
   return (
     <div className="flex justify-center">
-      <div className="w-[90rem] md:px-8">
+      <div className="relative w-[90rem] lg:px-8">
         <Header />
+        <Main />
       </div>
     </div>
   );

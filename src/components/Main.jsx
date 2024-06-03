@@ -80,7 +80,7 @@ function Main() {
             <span className="font-bold text-blue-900">0</span>
             <PlusButton />
           </div>
-          <button className="flex items-center justify-center gap-3 rounded-lg bg-orange-200 px-5 py-3 shadow-xl shadow-orange-200/40 hover:bg-orange-200/80 lg:w-full lg:py-4">
+          <button className="flex items-center justify-center gap-3 rounded-lg bg-orange-200 px-5 py-3 shadow-xl shadow-orange-200/40 hover:bg-orange-200/80 lg:w-[70%] lg:py-4">
             <div className="h-min w-4">
               <img src="images/icon-cart.svg" alt="cart-icon" />
             </div>

@@ -4,12 +4,16 @@ import MinusButton from "./MinusButton";
 import PlusButton from "./PlusButton";
 import ThumbnailList from "./ThumbnailList";
 import Thumbnail from "./Thumbnail";
+import CloseIcon from "./CloseIcon";
 
 const MIN_INDEX = 1;
 const MAX_INDEX = 4;
 
+//TODO refactor
+
 function Main() {
   const [index, setIndex] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleClickLeft() {
     setIndex((index) => (index > MIN_INDEX ? index - 1 : MAX_INDEX));
@@ -23,15 +27,29 @@ function Main() {
     setIndex(index);
   }
 
+  function handleOpen() {
+    setIsOpen(true);
+  }
+
+  function handleClose() {
+    setIsOpen(false);
+  }
+
   return (
     <main className="z-1 relative lg:flex lg:gap-24 lg:pt-24">
       <section>
         <div>
-          <div className="relative overflow-hidden lg:rounded-2xl">
+          <div className="relative">
             <div className="lg:hidden">
               <ArrowButton position={"left"} onClick={handleClickLeft} />
             </div>
-            <img src={`/images/image-product-${index}.jpg`} alt="product" />
+
+            <div
+              className="overflow-hidden lg:cursor-pointer lg:rounded-2xl"
+              onClick={handleOpen}
+            >
+              <img src={`/images/image-product-${index}.jpg`} alt="product" />
+            </div>
             <div className="lg:hidden">
               <ArrowButton position={"right"} onClick={handleClickRight} />
             </div>
@@ -50,6 +68,42 @@ function Main() {
             </ThumbnailList>
           </div>
         </div>
+        {isOpen && (
+          <div className="fixed inset-0 z-[9999] hidden h-full place-items-center bg-black/75 lg:grid">
+            <div className="max-w-lg">
+              <div className="relative">
+                <div className="absolute -top-10 right-0 w-min">
+                  <CloseIcon onClick={handleClose} />
+                </div>
+                <div className="">
+                  <ArrowButton position={"left"} onClick={handleClickLeft} />
+                </div>
+                <div className="overflow-hidden lg:rounded-2xl">
+                  <img
+                    src={`/images/image-product-${index}.jpg`}
+                    alt="product"
+                  />
+                </div>
+                <div className="">
+                  <ArrowButton position={"right"} onClick={handleClickRight} />
+                </div>
+              </div>
+              <div className="flex justify-around">
+                <ThumbnailList gap={6}>
+                  {Array.from({ length: MAX_INDEX }, (_, i) => (
+                    <Thumbnail
+                      key={i}
+                      index={i + 1}
+                      selectedId={index}
+                      onClick={handleIndex}
+                      className={"w-24"}
+                    />
+                  ))}
+                </ThumbnailList>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
       <section className="px-6 pt-6">
         <div className="flex flex-col gap-2">

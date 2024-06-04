@@ -4,7 +4,7 @@ import Main from "./Main";
 function App() {
   return (
     <div className="flex justify-center">
-      <div className="relative w-[90rem] lg:px-8">
+      <div className="relative w-[75rem] lg:px-8">
         <Header />
         <Main />
       </div>

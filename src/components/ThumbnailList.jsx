@@ -1,9 +1,5 @@
-function ThumbnailList({ children, gap = 3 }) {
-  return (
-    <ul className={`flex flex-row justify-between gap-${gap} pt-10`}>
-      {children}
-    </ul>
-  );
+function ThumbnailList({ children, className }) {
+  return <ul className={`flex flex-row pt-10 ${className}`}>{children}</ul>;
 }
 
 export default ThumbnailList;

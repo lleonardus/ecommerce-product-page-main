@@ -1,7 +1,7 @@
 function CloseIcon({ onClick }) {
   return (
     <div
-      className="cursor-pointer text-white hover:text-orange-200"
+      className="absolute -top-10 right-0 w-min cursor-pointer text-white hover:text-orange-200"
       onClick={onClick}
     >
       <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">

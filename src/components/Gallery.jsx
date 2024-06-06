@@ -15,7 +15,7 @@ function Gallery({
     <>
       <div className="relative">
         <ArrowButton
-          className={"left-4 rotate-180 lg:hidden"}
+          className={"left-8 w-[.6rem] rotate-180 before:w-10 lg:hidden"}
           onClick={handleClickLeft}
         />
         <Product
@@ -24,7 +24,7 @@ function Gallery({
           onClick={handleOpen}
         />
         <ArrowButton
-          className={"right-4 lg:hidden"}
+          className={"right-8 w-[.6rem] before:w-10 lg:hidden"}
           onClick={handleClickRight}
         />
       </div>

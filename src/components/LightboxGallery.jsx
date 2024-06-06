@@ -18,12 +18,14 @@ function LightboxGallery({
         <div className="relative">
           <CloseIcon onClick={handleClose} />
           <ArrowButton
-            className={"left-0 translate-x-[-50%] rotate-180"}
+            className={
+              "left-0 w-[.85rem] translate-x-[-50%] rotate-180 before:w-14"
+            }
             onClick={handleClickLeft}
           />
           <Product imageIndex={index} />
           <ArrowButton
-            className={"right-0 translate-x-[50%]"}
+            className={"right-0 w-[.85rem] translate-x-[50%] before:w-14"}
             onClick={handleClickRight}
           />
         </div>

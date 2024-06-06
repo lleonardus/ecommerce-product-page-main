@@ -1,0 +1,25 @@
+import DeleteIcon from "./DeleteIcon";
+
+function CartItem() {
+  return (
+    <li className="flex flex-col gap-5">
+      <div className="flex items-center justify-between gap-3">
+        <div className="w-12 overflow-hidden rounded-sm">
+          <img src={`images/image-product-1-thumbnail.jpg`} alt="product" />
+        </div>
+        <div className="text-blue-800">
+          <p>Fall Limited Edition Sneakers</p>
+          <p>
+            $125.00 x 3<span className="font-bold text-black"> $375.00</span>
+          </p>
+        </div>
+        <DeleteIcon />
+      </div>
+      <button className="rounded-lg bg-orange-200 py-4 font-bold text-white hover:bg-orange-200/80">
+        Checkout
+      </button>
+    </li>
+  );
+}
+
+export default CartItem;

@@ -1,10 +1,10 @@
+import { useState } from "react";
 import Logo from "./Logo";
 import NavList from "./NavList";
 import NavItem from "./NavItem";
-import { useState } from "react";
 import Cart from "./Cart";
 
-function Header({ items, handleRemoveItem }) {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -24,7 +24,7 @@ function Header({ items, handleRemoveItem }) {
         </NavList>
       </div>
       <div className="flex items-center gap-8">
-        <Cart items={items} handleRemoveItem={handleRemoveItem} />
+        <Cart />
         <button className="aspect-square w-6 bg-[url('images/image-avatar.png')] bg-cover bg-no-repeat hover:rounded-full hover:outline hover:outline-[2px] hover:outline-orange-200 md:w-10"></button>
       </div>
     </header>

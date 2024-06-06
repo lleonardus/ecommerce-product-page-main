@@ -1,6 +1,9 @@
+import { useCart } from "../hooks/useCart";
 import DeleteIcon from "./DeleteIcon";
 
-function CartItem({ index, imageIndex, quantity, onRemoveItem }) {
+function CartItem({ index, imageIndex, quantity }) {
+  const { removeItem } = useCart();
+
   return (
     <li className="flex flex-col gap-5">
       <div className="flex items-center justify-between gap-3">
@@ -17,9 +20,12 @@ function CartItem({ index, imageIndex, quantity, onRemoveItem }) {
             <span className="font-bold text-black"> ${125 * quantity}.00</span>
           </p>
         </div>
-        <DeleteIcon onClick={() => onRemoveItem(index)} />
+        <DeleteIcon onClick={() => removeItem(index)} />
       </div>
-      <button className="rounded-lg bg-orange-200 py-4 font-bold text-white hover:bg-orange-200/80" onClick={() => onRemoveItem(index)}>
+      <button
+        className="rounded-lg bg-orange-200 py-4 font-bold text-white hover:bg-orange-200/80"
+        onClick={() => removeItem(index)}
+      >
         Checkout
       </button>
     </li>

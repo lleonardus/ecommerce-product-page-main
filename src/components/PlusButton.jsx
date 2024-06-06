@@ -1,7 +1,11 @@
-function PlusButton({ onClick }) {
+import { useCart } from "../hooks/useCart";
+
+function PlusButton() {
+  const { incrementQuantity } = useCart();
+
   return (
     <button
-      onClick={onClick}
+      onClick={incrementQuantity}
       className="text-orange-200 hover:text-orange-200/80"
     >
       <svg

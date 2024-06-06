@@ -3,14 +3,20 @@ import Gallery from "./Gallery";
 import LightboxGallery from "./LightboxGallery";
 import ItemQuantitySelector from "./ItemQuantitySelector";
 import AddToCart from "./AddToCart";
+import { useCart } from "../hooks/useCart";
 
 const MIN_INDEX = 1;
 const MAX_INDEX = 4;
 
-function Main({ handleAddItem }) {
+function Main() {
   const [index, setIndex] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
-  const [quantity, setQuantity] = useState(0);
+  const { addItem, quantity } = useCart();
+
+  function handleAddItem() {
+    const newItem = { index: new Date(), imageIndex: index, quantity };
+    addItem(newItem);
+  }
 
   function handleClickLeft() {
     setIndex((index) => (index > MIN_INDEX ? index - 1 : MAX_INDEX));
@@ -78,8 +84,8 @@ function Main({ handleAddItem }) {
           <p className="font-bold text-blue-700 line-through">$250.00</p>
         </div>
         <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
-          <ItemQuantitySelector quantity={quantity} setQuantity={setQuantity} />
-          <AddToCart onClick={() => handleAddItem(index, quantity)} />
+          <ItemQuantitySelector />
+          <AddToCart onClick={handleAddItem} />
         </div>
       </section>
     </main>

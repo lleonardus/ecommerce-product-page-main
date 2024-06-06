@@ -1,11 +1,13 @@
 import { useState } from "react";
+import { useCart } from "../hooks/useCart";
 import CartIcon from "./CartIcon";
 import CartItemList from "./CartItemList";
 import CartItem from "./CartItem";
 import EmptyCart from "./EmptyCart";
 
-function Cart({ items, handleRemoveItem }) {
+function Cart() {
   const [isOpen, setIsOpen] = useState(false);
+  const { items } = useCart();
   const totalOfItems = items.reduce((acc, curr) => acc + curr.quantity, 0);
 
   return (
@@ -30,7 +32,6 @@ function Cart({ items, handleRemoveItem }) {
                     index={item.index}
                     imageIndex={item.imageIndex}
                     quantity={item.quantity}
-                    onRemoveItem={handleRemoveItem}
                   />
                 ))}
               </CartItemList>

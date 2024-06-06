@@ -1,7 +1,11 @@
-function MinusButton({ onClick }) {
+import { useCart } from "../hooks/useCart";
+
+function MinusButton() {
+  const { decrementQuantity } = useCart();
+
   return (
     <button
-      onClick={onClick}
+      onClick={decrementQuantity}
       className="text-orange-200 hover:text-orange-200/80"
     >
       <svg

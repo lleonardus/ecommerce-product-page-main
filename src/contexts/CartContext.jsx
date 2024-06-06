@@ -20,7 +20,6 @@ function reducer(state, action) {
       return {
         ...state,
         items: state.items.filter((item) => item.index !== action.payload),
-        quantity: 0,
       };
     case "cart/incrementQuantity":
       return { ...state, quantity: state.quantity + 1 };

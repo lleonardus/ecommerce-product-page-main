@@ -1,8 +1,8 @@
-import CartIcon from "./CartIcon";
 import Logo from "./Logo";
 import NavList from "./NavList";
 import NavItem from "./NavItem";
 import { useState } from "react";
+import Cart from "./Cart";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +24,7 @@ function Header() {
         </NavList>
       </div>
       <div className="flex items-center gap-8">
-        <div id="cart-stuff">
-          <CartIcon />
-        </div>
+        <Cart />
         <button className="aspect-square w-6 bg-[url('images/image-avatar.png')] bg-cover bg-no-repeat hover:rounded-full hover:outline hover:outline-[2px] hover:outline-orange-200 md:w-10"></button>
       </div>
     </header>

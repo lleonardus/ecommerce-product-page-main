@@ -1,7 +1,7 @@
 function NavList({ children, isOpen }) {
   return (
     <nav
-      className={`md:static ${isOpen ? "fixed inset-0 h-full bg-black/75" : ""}`}
+      className={`z-[9999] md:static ${isOpen ? "fixed inset-0 h-full bg-black/75" : ""}`}
     >
       <div
         className={`fixed inset-0 h-full transition-transform md:static md:translate-x-0 md:transition-none ${isOpen ? "" : "-translate-x-full"}`}

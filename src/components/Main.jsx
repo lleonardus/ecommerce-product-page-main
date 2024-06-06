@@ -1,8 +1,8 @@
 import { useState } from "react";
-import MinusButton from "./MinusButton";
-import PlusButton from "./PlusButton";
 import Gallery from "./Gallery";
 import LightboxGallery from "./LightboxGallery";
+import ItemQuantitySelector from "./ItemQuantitySelector";
+import AddToCart from "./AddToCart";
 
 const MIN_INDEX = 1;
 const MAX_INDEX = 4;
@@ -74,20 +74,11 @@ function Main() {
               50%
             </p>
           </div>
-          <p className="font-bold text-blue-700 line-through">$250</p>
+          <p className="font-bold text-blue-700 line-through">$250.00</p>
         </div>
         <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
-          <div className="flex justify-between rounded-lg bg-blue-100 px-5 py-3 lg:w-[40%] lg:min-w-32 lg:py-4">
-            <MinusButton />
-            <span className="font-bold text-blue-900">0</span>
-            <PlusButton />
-          </div>
-          <button className="flex items-center justify-center gap-3 rounded-lg bg-orange-200 px-5 py-3 shadow-xl shadow-orange-200/40 hover:bg-orange-200/80 lg:w-[70%] lg:py-4">
-            <div className="h-min w-4">
-              <img src="images/icon-cart.svg" alt="cart-icon" />
-            </div>
-            <p className="font-bold text-white">Add to cart</p>
-          </button>
+          <ItemQuantitySelector />
+          <AddToCart />
         </div>
       </section>
     </main>

@@ -1,5 +1,5 @@
 function CartItemList({ children }) {
-  return <ul className="px-5 pt-6">{children}</ul>;
+  return <ul className="flex flex-col gap-8 px-5 py-6">{children}</ul>;
 }
 
 export default CartItemList;

@@ -1,6 +1,6 @@
-function DeleteIcon() {
+function DeleteIcon({ onClick }) {
   return (
-    <button className="text-blue-700 hover:text-blue-800">
+    <button onClick={onClick} className="text-blue-700 hover:text-blue-800">
       <svg
         width="14"
         height="16"

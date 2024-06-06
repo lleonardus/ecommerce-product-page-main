@@ -7,9 +7,10 @@ import AddToCart from "./AddToCart";
 const MIN_INDEX = 1;
 const MAX_INDEX = 4;
 
-function Main() {
+function Main({ handleAddItem }) {
   const [index, setIndex] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
+  const [quantity, setQuantity] = useState(0);
 
   function handleClickLeft() {
     setIndex((index) => (index > MIN_INDEX ? index - 1 : MAX_INDEX));
@@ -77,8 +78,8 @@ function Main() {
           <p className="font-bold text-blue-700 line-through">$250.00</p>
         </div>
         <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
-          <ItemQuantitySelector />
-          <AddToCart />
+          <ItemQuantitySelector quantity={quantity} setQuantity={setQuantity} />
+          <AddToCart onClick={() => handleAddItem(index, quantity)} />
         </div>
       </section>
     </main>

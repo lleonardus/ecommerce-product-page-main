@@ -1,6 +1,9 @@
-function PlusButton() {
+function PlusButton({ onClick }) {
   return (
-    <button className="text-orange-200 hover:text-orange-200/80">
+    <button
+      onClick={onClick}
+      className="text-orange-200 hover:text-orange-200/80"
+    >
       <svg
         width="12"
         height="12"

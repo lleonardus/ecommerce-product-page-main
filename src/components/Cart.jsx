@@ -11,7 +11,7 @@ function Cart() {
   const totalOfItems = items.reduce((acc, curr) => acc + curr.quantity, 0);
 
   return (
-    <div className="sm:relative">
+    <div className="h-5 sm:relative">
       <CartIcon
         isOpen={isOpen}
         totalOfItems={totalOfItems}

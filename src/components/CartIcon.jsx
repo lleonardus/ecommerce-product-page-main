@@ -1,7 +1,7 @@
-function CartIcon({ totalOfItems, onClick }) {
+function CartIcon({ isOpen, totalOfItems, onClick }) {
   return (
     <button
-      className="relative text-blue-800 hover:cursor-pointer hover:text-blue-900"
+      className={`relative text-blue-800 hover:cursor-pointer hover:text-blue-900 ${isOpen ? "text-blue-900" : ""}`}
       onClick={onClick}
     >
       {totalOfItems > 0 && (

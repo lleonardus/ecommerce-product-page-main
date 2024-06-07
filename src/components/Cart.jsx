@@ -13,6 +13,7 @@ function Cart() {
   return (
     <div className="sm:relative">
       <CartIcon
+        isOpen={isOpen}
         totalOfItems={totalOfItems}
         onClick={() => setIsOpen((isOpen) => !isOpen)}
       />

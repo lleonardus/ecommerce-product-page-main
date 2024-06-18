@@ -25,7 +25,7 @@ function Header() {
       </div>
       <div className="flex items-center gap-6 md:gap-8">
         <Cart />
-        <button className="aspect-square w-6 bg-[url('images/image-avatar.png')] bg-cover bg-no-repeat hover:rounded-full hover:outline hover:outline-[2px] hover:outline-orange-200 md:w-10"></button>
+        <button className="aspect-square w-6 bg-[url('/images/image-avatar.png')] bg-cover bg-no-repeat hover:rounded-full hover:outline hover:outline-[2px] hover:outline-orange-200 md:w-10"></button>
       </div>
     </header>
   );

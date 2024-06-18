@@ -22,7 +22,7 @@ Deploy na Vercel: https://ecommerce-product-page-main-lyart.vercel.app/
 
 ```shell
 # Clone o repositório na sua máquina
-$git clone https://github.com/lleonardus/ecommerce-product-page-main
+$ git clone https://github.com/lleonardus/ecommerce-product-page-main
 
 # Abra a pasta do projeto
 $ cd ecommerce-product-page-main
@@ -31,7 +31,7 @@ $ cd ecommerce-product-page-main
 $ npm i
 
 # Inicie o projeto
-$ npm start
+$ npm run dev
 ```
 
 Após esse processo, o App vai estar rodando em **http://localhost:5173**

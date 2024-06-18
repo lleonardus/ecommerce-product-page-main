@@ -12,7 +12,7 @@ function Header() {
       <div className="flex items-end gap-4 md:items-center md:gap-10">
         <button
           onClick={() => setIsOpen((isOpen) => !isOpen)}
-          className={`aspect-square min-w-4 bg-no-repeat md:hidden ${isOpen ? "fixed left-6 z-[99999] bg-[url('images/icon-close.svg')]" : "bg-[url('images/icon-menu.svg')]"}`}
+          className={`aspect-square min-w-4 bg-no-repeat md:hidden ${isOpen ? "fixed left-6 z-[99999] bg-[url('/images/icon-close.svg')]" : "bg-[url('/images/icon-menu.svg')]"}`}
         ></button>
         <Logo />
         <NavList isOpen={isOpen}>

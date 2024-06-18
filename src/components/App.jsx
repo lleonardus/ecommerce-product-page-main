@@ -5,7 +5,7 @@ import Main from "./Main";
 function App() {
   return (
     <div className="flex justify-center pb-20">
-      <div className="relative w-[75rem] lg:px-8">
+      <div className="relative w-[75rem] md:px-10">
         <CartProvider>
           <Header />
           <Main />

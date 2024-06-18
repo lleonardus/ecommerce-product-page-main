@@ -13,7 +13,7 @@ function LightboxGallery({
   handleClickRight,
 }) {
   return (
-    <div className="fixed inset-0 z-[9999] hidden h-full place-items-center bg-black/75 lg:grid">
+    <div className="fixed inset-0 z-[9999] hidden h-full place-items-center bg-black/75 md:grid">
       <div className="max-w-lg">
         <div className="relative">
           <CloseIcon onClick={handleClose} />

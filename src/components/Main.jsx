@@ -39,7 +39,7 @@ function Main() {
   }
 
   return (
-    <main className="z-1 relative lg:flex lg:gap-24 lg:pt-24">
+    <main className="z-1 relative md:flex md:gap-14 md:pt-24 lg:gap-24">
       <section>
         <Gallery
           maxIndex={MAX_INDEX}
@@ -74,10 +74,10 @@ function Main() {
           Featuring a durable rubber outer sole, they'll withstand everything
           the weather can offer.
         </p>
-        <div className="flex items-center justify-between pb-8 lg:flex-col lg:items-start lg:gap-2">
+        <div className="flex items-center justify-between pb-8 md:gap-2 lg:flex-col lg:items-start">
           <div className="flex items-center gap-5">
             <p className="text-3xl font-bold text-blue-900">$125.00</p>
-            <p className="rounded-lg bg-orange-100 px-2 font-bold text-orange-200">
+            <p className="rounded-md bg-orange-100 px-2 font-bold text-orange-200">
               50%
             </p>
           </div>

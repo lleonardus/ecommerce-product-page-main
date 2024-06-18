@@ -15,20 +15,20 @@ function Gallery({
     <>
       <div className="relative">
         <ArrowButton
-          className={"left-8 w-[.6rem] rotate-180 before:w-10 lg:hidden"}
+          className={"left-8 w-[.6rem] rotate-180 before:w-10 md:hidden"}
           onClick={handleClickLeft}
         />
         <Product
-          className={"lg:cursor-pointer"}
+          className={"md:cursor-pointer"}
           imageIndex={index}
           onClick={handleOpen}
         />
         <ArrowButton
-          className={"right-8 w-[.6rem] before:w-10 lg:hidden"}
+          className={"right-8 w-[.6rem] before:w-10 md:hidden"}
           onClick={handleClickRight}
         />
       </div>
-      <ThumbnailList className={"hidden lg:flex lg:justify-between lg:gap-3"}>
+      <ThumbnailList className={"hidden md:flex md:justify-between md:gap-3"}>
         {Array.from({ length: maxIndex }, (_, i) => (
           <Thumbnail
             key={i}
